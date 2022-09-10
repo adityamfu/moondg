@@ -1,0 +1,26 @@
+
+.jumbotron{
+    padding-top: 6em;
+    background-color: #b4d0e7;
+}
+
+#galeri{
+    background-color: #b4d0e7;
+}
+
+section{
+    padding: 5rem;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 2px;
+    background-color: #61082b;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #61082b;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: linear-gradient(40deg, #dd075d, #c09dac);
+}
