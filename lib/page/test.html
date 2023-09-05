@@ -15,9 +15,7 @@
     <title>TEST</title>
   </head>
   <body>
-    <!-- <div class="canvas-container">
-      <canvas id="game-canvas"></canvas>
-    </div> -->
+    
     <canvas id="c"></canvas>
     <script type="module">
       import * as THREE from 'https://cdn.skypack.dev/three';
@@ -28,7 +26,7 @@
         const renderer = new THREE.WebGLRenderer({ canvas });
 
         const fov = 45;
-        const aspect = 2; // the canvas default
+        const aspect = 2;
         const near = 0.1;
         const far = 100;
         const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);

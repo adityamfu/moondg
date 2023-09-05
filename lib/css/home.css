@@ -11,6 +11,9 @@
   height: 120px;
   border-radius: 10%;
 }
+a {
+  color: rgb(219, 229, 231);
+}
 
 .profile h1 {
   font-size: 26px;

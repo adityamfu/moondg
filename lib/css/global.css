@@ -7,7 +7,7 @@ body {
   transition: background-color 0.5s;
 }
 a {
-  color: rgb(219, 229, 231);
+  /* color: rgb(219, 229, 231); */
   text-decoration: none;
 }
 .container {
@@ -24,6 +24,7 @@ a {
 }
 .brand a {
   display: none;
+  color: rgb(219, 229, 231);
 }
 @keyframes bone {
   0%,
@@ -42,7 +43,7 @@ a {
 }
 
 .navbar .brand a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   display: block;
 }
@@ -61,7 +62,7 @@ a {
 
 .navbar li a {
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,12 +83,11 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #fff;
   padding: 0;
   position: fixed;
   flex-direction: row;
   width: 100%;
-  height: 70px;
+  height: 56px;
   box-shadow: none;
   background-color: #3330;
   backdrop-filter: blur(16px) saturate(100%) contrast(100%);
@@ -110,6 +110,10 @@ ul.menu {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+}
+
+.menu li .nav-preview {
+  display: none;
 }
 
 .menu li {
@@ -173,4 +177,8 @@ footer p {
   font-size: small;
   text-align: center;
   color: #8e8888;
+}
+
+.project {
+  width: 100%;
 }

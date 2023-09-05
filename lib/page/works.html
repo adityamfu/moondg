@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="../assets/images/ico.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
@@ -23,7 +24,8 @@
         <ul class="menu" id="navbarOverlay">
           <li><a href="works.html">Works</a></li>
           <li><a href="design.html">Design</a></li>
-          <li><i class="fa-brands fa-github fa-lg"></i><a href="test.html"> Source</a></li>
+          <li><i class="fa-brands fa-github fa-lg"></i><a href="https://github.com/adityamfu/portfolio.github.io"> Source</a></li>
+          <li><div class="nav-preview" style="display: none">Preview</div></li>
         </ul>
       </ul>
       <ul class="tools">
@@ -82,7 +84,7 @@
     <script src="../js/vanta.js"></script>
 
     <script type="module">
-      import { projectsData } from '../js/db.js';
+      import { projectsData } from '../js/dbProject.js';
 
       const ownWorksGrid = document.getElementById('ownWorksGrid');
       const teamWorksGrid = document.getElementById('teamWorksGrid');
@@ -101,9 +103,9 @@
     </a>
   `;
 
-        if (project.jenis === 'pribadi') {
+        if (project.category === 'own') {
           ownWorksGrid.appendChild(card);
-        } else if (project.jenis === 'kelompok') {
+        } else if (project.category === 'team') {
           teamWorksGrid.appendChild(card);
         }
       });

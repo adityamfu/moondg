@@ -3,6 +3,9 @@ body.dark-mode {
   color: #1e2126;
 }
 
+body.dark-mode .brand a {
+  color: #1e2126;
+}
 body.dark-mode a {
   color: #1e2126;
 }
@@ -11,7 +14,8 @@ body.dark-mode .navbar {
   backdrop-filter: blur(16px) saturate(120%) contrast(105%);
   -webkit-backdrop-filter: blur(16px) saturate(120%) contrast(105%);
 }
-body.dark-mode i {
+
+body.dark-mode .menu a {
   color: #1e2126;
 }
 body.dark-mode .btn a {
@@ -21,6 +25,10 @@ body.dark-mode .hi-box p {
   font-weight: 500;
   color: #000000;
   background-color: rgba(135, 145, 143, 0.932);
+}
+
+body.dark-mode .link tr a {
+  color: #1e2126;
 }
 .toggle-btn {
   cursor: pointer;
