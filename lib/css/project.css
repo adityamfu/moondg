@@ -1,46 +1,41 @@
-.grid {
+.head-class i {
+  cursor: pointer;
+}
+.head-class {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pcard {
+  display: block;
   text-align: center;
+  padding-top: 10px;
+  transition: all 0.5s;
+}
+
+.grid-layout {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 0.5s;
+  gap: 10px;
 }
-
-.card {
-  vertical-align: top;
-  text-align: center;
-  /* padding: 10px; */
-}
-
-.card img {
+.pcard img {
   width: 100%;
   border-radius: 15px;
   height: auto;
   object-fit: cover;
-  margin-bottom: 7px;
+  margin-block: 10px;
 }
 
-.card h2 {
+.pcard h2 {
   margin: 0;
   font-size: 18px;
 }
 
-.card p {
+.pcard p {
   margin: 0;
 }
-
-/* Style untuk divider */
-.divider {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.divider span {
-  display: inline-block;
-  width: 100%;
-  height: 0.1px;
-  background-color: #524c4c;
-}
-
 .about a {
   text-decoration: none;
   color: #007bff;
@@ -51,49 +46,73 @@
   color: #0056b3;
 }
 
-.about .front {
-  font-size: 13px;
-  color: rgb(30, 255, 128);
+.project {
+  padding-block: 20px;
+  width: 100%;
+  margin: 0;
+}
+.project p {
+  margin: 10px 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.about {
+  padding-block: 6px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+  /* width: 100%; */
+}
+.desc {
+  text-indent: 20px;
+}
+.about > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  text-align: start;
+}
+span {
+  max-width: fit-content;
+  font-weight: 800;
+  font-size: 12px;
+  color: #1eff80;
   padding: 3.2px;
+  margin-right: 0.4rem;
   border-radius: 3px;
   text-align: center;
   background-color: rgba(87, 88, 85, 0.929);
 }
-.about {
-  padding-block: 6px;
-  font-size: 15px;
-  /* text-align: justify; */
+
+.about .data-value {
+  font-size: 14px;
 }
-.project {
-  padding-block: 12px;
-  width: 100%;
-}
-.category {
-  /* border-radius: 5rem; */
-  border-bottom: 4px solid #107ca3;
-  display: inline-block;
-  padding-bottom: 2px;
-}
-.project p {
-  margin: 10px 0;
-  text-align: justify;
-  padding-right: 10px;
-}
-span {
-  font-weight: 800;
-  font-size: 12px;
-  color: rgb(30, 255, 128);
-  padding: 3.2px;
-  margin-left: 0.5rem;
-  border-radius: 5px;
+
+.divider {
   text-align: center;
-  background-color: rgba(87, 88, 85, 0.929);
+  width: 100%;
+  margin-block: 3rem;
 }
+
+.divider span {
+  display: inline-block;
+  width: 100%;
+  /* height: 0px; */
+  margin: 0;
+  padding: 1px;
+  max-width: 100%;
+  background-color: #524c4c;
+}
+
 .breadcrumb .ttl {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .breadcrumb {
-  font-size: 16px;
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -103,13 +122,40 @@ span {
   text-decoration: underline;
 }
 .breadcrumb a {
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: 800;
+  text-decoration: overline;
   color: #007bff;
-  transition: color 0.3s;
+  transition: all 0.3s;
 }
 
 .breadcrumb i {
   margin: 0 7px;
+}
+.prjk-floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.prjk-floating-button a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #524c4c;
+  color: #1eff80;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.prjk-floating-button a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 290px) {
+  .about .data-value,
+  a {
+    font-size: 11.7px;
+  }
 }

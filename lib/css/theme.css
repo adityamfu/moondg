@@ -26,9 +26,23 @@ body.dark-mode .hi-box p {
   color: #000000;
   background-color: rgba(135, 145, 143, 0.932);
 }
-
+body.dark-mode .breadcrumb a {
+  color: rgb(157, 14, 209);
+}
+body.dark-mode .about a {
+  color: rgb(157, 14, 209);
+}
+body.dark-mode .about a:hover {
+  color: #0d427a;
+}
 body.dark-mode .link tr a {
   color: #1e2126;
+}
+body.dark-mode .floating-button a {
+  color: #fff;
+}
+body.dark-mode .prjk-floating-button a {
+  color: #1eff80;
 }
 .toggle-btn {
   cursor: pointer;

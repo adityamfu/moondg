@@ -15,6 +15,7 @@ This portfolio is created to showcase the projects I've worked on in web develop
 ## STACK
 
 - [Vanta.js](https://www.vantajs.com/) : A JavaScript library that easily add dynamic and interactive.
+- [JavaScript](https://www.javascript.com/) : A scripting language for creating dynamic web page content. It creates elements for improving site visitors' interaction with web pages.
 - [Vanila CSS](https://www.w3.org/Style/CSS/) : Refers to the use of plain or pure Cascading Style Sheets (CSS) without any additional libraries or preprocessors.
 - [HTML5](https://html.spec.whatwg.org/multipage/) : Is the latest version of the Hypertext Markup Language used to create web pages and applications.
 

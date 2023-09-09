@@ -32,7 +32,7 @@ p {
 }
 
 .project {
-  padding-block: 12px;
+  padding-top: 25px;
 }
 .category {
   /* border-radius: 5rem; */
@@ -68,7 +68,21 @@ th {
   /* overflow: hidden; */
   /* position: relative; */
 }
-
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.link li > a {
+  padding: 5px;
+  border-radius: 6px;
+}
+.link li > a:hover {
+  background-color: #524c4c;
+}
 .btn a {
   text-decoration: none;
   padding: 10px 20px;
@@ -99,5 +113,18 @@ th {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .menu li .nav-preview {
+    display: block;
+    font: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #107ca3;
   }
 }

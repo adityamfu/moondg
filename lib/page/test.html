@@ -3,122 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="../css/works.css" /> -->
-    <!-- <link rel="stylesheet" href="../css/test.css" /> -->
-    <link rel="stylesheet" href="../css/test2.css" />
-    <!-- <link rel="stylesheet" href="../css/theme.css" /> -->
-    <!-- <link rel="stylesheet" href="../css/responsive.css" /> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <title>TEST</title>
+    <title>Portfolio Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .project-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        display: inline-block;
+        width: 300px;
+      }
+      iframe {
+        width: 100%;
+        height: 200px; /* Sesuaikan tinggi sesuai kebutuhan */
+        border: none;
+        overflow: auto;
+      }
+    </style>
   </head>
   <body>
-    
-    <canvas id="c"></canvas>
-    <script type="module">
-      import * as THREE from 'https://cdn.skypack.dev/three';
-      import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
+    <div class="project-container">
+      <h2>Project 1</h2>
+      <iframe src="https://adityamfu.github.io/"></iframe>
+    </div>
 
-      function main() {
-        const canvas = document.querySelector('#c');
-        const renderer = new THREE.WebGLRenderer({ canvas });
+    <div class="project-container">
+      <h2>Project 2</h2>
+      <iframe src="https://www.example.com/project2"></iframe>
+    </div>
 
-        const fov = 45;
-        const aspect = 2;
-        const near = 0.1;
-        const far = 100;
-        const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-        camera.position.set(0, 10, 20);
+    <div class="project-container">
+      <h2>Project 3</h2>
+      <iframe src="https://www.example.com/project3"></iframe>
+    </div>
 
-        function updateCamera() {
-          camera.updateProjectionMatrix();
-        }
-
-        const controls = new OrbitControls(camera, canvas);
-        controls.target.set(0, 5, 0);
-        controls.update();
-
-        const scene = new THREE.Scene();
-        scene.background = new THREE.Color('black');
-
-        {
-          const planeSize = 40;
-
-          const loader = new THREE.TextureLoader();
-          const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png');
-          texture.wrapS = THREE.RepeatWrapping;
-          texture.wrapT = THREE.RepeatWrapping;
-          texture.magFilter = THREE.NearestFilter;
-          const repeats = planeSize / 2;
-          texture.repeat.set(repeats, repeats);
-
-          const planeGeo = new THREE.PlaneGeometry(planeSize, planeSize);
-          const planeMat = new THREE.MeshPhongMaterial({
-            map: texture,
-            side: THREE.DoubleSide,
-          });
-          const mesh = new THREE.Mesh(planeGeo, planeMat);
-          mesh.rotation.x = Math.PI * -0.5;
-          scene.add(mesh);
-        }
-        {
-          const cubeSize = 4;
-          const cubeGeo = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
-          const cubeMat = new THREE.MeshPhongMaterial({ color: '#8AC' });
-          const mesh = new THREE.Mesh(cubeGeo, cubeMat);
-          mesh.position.set(cubeSize + 1, cubeSize / 2, 0);
-          scene.add(mesh);
-        }
-        {
-          const sphereRadius = 3;
-          const sphereWidthDivisions = 32;
-          const sphereHeightDivisions = 16;
-          const sphereGeo = new THREE.SphereGeometry(sphereRadius, sphereWidthDivisions, sphereHeightDivisions);
-          const sphereMat = new THREE.MeshPhongMaterial({ color: '#CA8' });
-          const mesh = new THREE.Mesh(sphereGeo, sphereMat);
-          mesh.position.set(-sphereRadius - 1, sphereRadius + 2, 0);
-          scene.add(mesh);
-        }
-
-        {
-          const color = 0xffffff;
-          const intensity = 1;
-          const light = new THREE.DirectionalLight(color, intensity);
-          light.position.set(0, 10, 0);
-          light.target.position.set(-5, 0, 0);
-          scene.add(light);
-          scene.add(light.target);
-        }
-
-        function resizeRendererToDisplaySize(renderer) {
-          const canvas = renderer.domElement;
-          const width = canvas.clientWidth;
-          const height = canvas.clientHeight;
-          const needResize = canvas.width !== width || canvas.height !== height;
-          if (needResize) {
-            renderer.setSize(width, height, false);
-          }
-          return needResize;
-        }
-
-        function render() {
-          if (resizeRendererToDisplaySize(renderer)) {
-            const canvas = renderer.domElement;
-            camera.aspect = canvas.clientWidth / canvas.clientHeight;
-            camera.updateProjectionMatrix();
-          }
-
-          renderer.render(scene, camera);
-
-          requestAnimationFrame(render);
-        }
-
-        requestAnimationFrame(render);
-      }
-
-      main();
-    </script>
+    <!-- Tambahkan container lainnya sesuai dengan kebutuhan -->
   </body>
 </html>
