@@ -147,6 +147,9 @@ span {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.5s;
+  box-shadow: 3px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 6px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
 .prjk-floating-button a:hover {

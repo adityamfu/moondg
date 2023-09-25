@@ -6,7 +6,7 @@
   }
   .content {
     position: absolute;
-    margin-inline: 2.7%;
+    padding-inline: 2%;
     justify-content: center;
     align-items: center;
   }
@@ -164,7 +164,14 @@
     font-size: 10px;
     margin-right: 0.2rem;
   }
-
+  .project-container .info {
+    font-size: 14px;
+    width: 200px;
+  }
+  .project-container iframe {
+    width: 250px;
+    height: 400px;
+  }
   footer p {
     font-size: 10px;
     text-align: center;
@@ -180,7 +187,7 @@
   }
   .content {
     padding-top: 30px;
-    margin-inline: 3%;
+    padding-inline: 3%;
   }
   .brand a i {
     rotate: 0deg;
@@ -302,6 +309,14 @@
     font-size: 10.7px;
     margin-right: 0.2rem;
   }
+  .project-container .info {
+    font-size: 14px;
+    width: 280px;
+  }
+  .project-container iframe {
+    width: 350px;
+    height: 470px;
+  }
   .divider span {
     display: flex;
     margin: 0;
@@ -312,9 +327,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .content {
-    margin-inline: 22.5%;
+    padding-inline: 25%;
     /* margin-top: 0; */
   }
   .navbar {
@@ -354,7 +369,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   .menu {
     display: flex;
     justify-content: center;
@@ -365,7 +380,7 @@
     display: none;
   }
   .content {
-    margin-inline: 22.5%;
+    padding-inline: 30.5%;
     /* margin-top: 0; */
   }
   .profile img {

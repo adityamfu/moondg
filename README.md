@@ -4,9 +4,9 @@ This is my web portfolio showcasing various projects I've worked on.
 
 ## Front Page
 
-[![Front Page](screenshot.png)](https://adityamfu.github.io/portfolio.github.io/)
+[![Front Page](screenshot.png)](https://adityamfu.github.io/moondg/)
 
-You can view my web portfolio live [here](https://adityamfu.github.io/portfolio.github.io/).
+You can view my web portfolio live [here](https://adityamfu.github.io/moondg/).
 
 ## Description
 
@@ -23,7 +23,7 @@ This portfolio is created to showcase the projects I've worked on in web develop
 
 If you want to run these projects locally, you can follow the steps below:
 
-1. Clone this repository to your computer :[https://github.com/adityamfu/portfolio.github.io.git](https://github.com/adityamfu/portfolio.github.io.git)
+1. Clone this repository to your computer :[https://github.com/adityamfu/moondg.git](https://github.com/adityamfu/moondg.git)
 
 2. Navigate to the project directory : .cd portofolio-nname.
 

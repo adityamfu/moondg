@@ -16,7 +16,10 @@
         const splashDuration = 5000;
 
         function goToHomePage() {
-          window.location.href = './lib/page/home.html';
+          // Mengganti URL yang ditampilkan
+          window.history.replaceState({}, '', '/new-url');
+
+          window.location.href = './lib/moondg/home.html';
         }
 
         setTimeout(goToHomePage, splashDuration);
